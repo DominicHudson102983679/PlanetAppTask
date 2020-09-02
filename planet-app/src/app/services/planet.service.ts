@@ -25,4 +25,5 @@ export class PlanetService {
     this.planets.push(planet);
     this.planets.sort((a, b) => (a.distanceFromSun < b.distanceFromSun) ? -1:1)
   }
+
 }

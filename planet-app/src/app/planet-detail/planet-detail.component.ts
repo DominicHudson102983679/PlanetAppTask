@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
+import { PlanetService } from '../services/planet.service';
+import { Planet } from "../planet";
+
 
 @Component({
   selector: 'app-planet-detail',
@@ -7,7 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlanetDetailComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  planet: Planet;
+
+  
+  constructor(public PlanetService: PlanetService) { }
 
   ngOnInit(): void {
   }

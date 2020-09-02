@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PlanetService } from '../services/planet.service';
+import { Planet } from "../planet";
 
 @Component({
   selector: 'app-planets-list',
