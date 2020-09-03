@@ -1,3 +1,2 @@
-<div class="solarSytem">
-    <app-planet-detail *ngFor="let planet of planetService" [planet]=planet></app-planet-detail>
-</div>
+<app-planet-detail *ngFor="let planet of planetService.planets" [planet]="planet">PLANET</app-planet-detail>
+

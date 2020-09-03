@@ -8,12 +8,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PlanetsListComponent implements OnInit {
   
+
   constructor(public planetService: PlanetsService) { 
     this.planetService = planetService;
   }
-
-  @Input()
-  property: string;
 
   ngOnInit(): void {
   }
