@@ -2,3 +2,8 @@ h3 {
     color: red;
 }
 
+body {
+    height: 30px;
+    width: 50px;
+    background-color: royalblue;
+}

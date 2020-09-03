@@ -1,12 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Planet } from "../planet";
+import { Planet } from './planet';
 
 @Injectable({
   providedIn: 'root'
 })
-
-export class PlanetService {
-
+export class PlanetsService {
+  
   planets: Planet[] = [
     new Planet("Sun", 0, 0),
     new Planet("Mercury", 0, 1),
@@ -21,9 +20,10 @@ export class PlanetService {
 
   constructor() { }
 
-  addPlanet(planet: Planet){
-    this.planets.push(planet);
-    this.planets.sort((a, b) => (a.distanceFromSun < b.distanceFromSun) ? -1:1)
+  addPlanet(Planet: Planet){
+  }
+
+  deletePlanet(Planet: Planet){
   }
 
 }

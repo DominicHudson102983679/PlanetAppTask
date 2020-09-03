@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { PlanetService } from '../services/planet.service';
-import { Planet } from "../planet";
+import { PlanetsService } from '../planets.service';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-planets-list',
@@ -8,10 +7,14 @@ import { Planet } from "../planet";
   styleUrls: ['./planets-list.component.css']
 })
 export class PlanetsListComponent implements OnInit {
+  
+  constructor(public planetService: PlanetsService) { 
+    this.planetService = planetService;
+  }
 
-  constructor() { }
+  @Input()
+  property: string;
 
   ngOnInit(): void {
   }
-
 }
